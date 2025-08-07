@@ -1,0 +1,53 @@
+name: OCR PDF on Dispatch
+
+on:
+  workflow_dispatch:
+    inputs:
+      pdf_file:
+        description: 'Caminho do PDF para processar'
+        required: true
+        default: 'NF.pdf'
+      resumeUrl:                           # <-- Adicionado!
+        description: 'URL do n8n para retomar execução'
+        required: false                    # <-- Pode ser false se não quiser obrigar
+
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instala dependências do sistema
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-por poppler-utils
+
+      - name: Instala dependências Python
+        run: pip install -r requirements.txt
+      
+      - name: Descobrir e Salvar Caminho do Tesseract
+        id: find_tessdata
+        run: |
+          TESSDATA_DIR=$(find /usr/share -name "por.traineddata" | sed 's|\(.*\)/.*|\1|')
+          echo "TESSDATA_PATH_FOUND=$TESSDATA_DIR" >> $GITHUB_ENV
+          echo "Caminho encontrado: $TESSDATA_DIR"
+
+      - name: Rodar o OCR
+        env:
+          TESSDATA_PREFIX: ${{ env.TESSDATA_PATH_FOUND }}
+        run: python ocr_pdf.py ${{ github.event.inputs.pdf_file }} output.txt
+
+      - name: Retornar resultado para n8n (resumeUrl)
+        if: ${{ github.event.inputs.resumeUrl != '' && github.event.inputs.resumeUrl != null }}
+        run: |
+          TEXT=$(cat output.txt | jq -Rs .)
+          curl -X POST "${{ github.event.inputs.resumeUrl }}" \
+            -H "Content-Type: application/json" \
+            -d "{ \"ocr_text\": $TEXT }"
+
+      - name: Commita arquivo output.txt no repositório
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: 'output.txt'
+          message: 'feat: OCR automático do PDF para texto'
+          default_author: github_actions
