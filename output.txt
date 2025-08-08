@@ -1,0 +1,104 @@
+
+--- Página 1 ---
+M B DE OLIVEIRA LEMES LTDA
+AUTOPARTS
+CNPJ: 12.746.201/0001-11
+
+DA GRACIOSA - ******** 1427 D Situação
+CEP: 83.413-200 - Bairro: ATUBA
+Município: COLOMBO - PARANÁ Tipo
+
+Telefone: (43) 3534-1689 - Celular: (41) 99982-0744
+
+Email: autoparts.curitibaOhotmail.com
+
+Insc. Municipal: 51735 Insc. Estadual: 905.38833-94 o Autenticidade
+
+Nota Fiscal de Serviço Eletrônica - Série NFS-e
+
+Identificador
+
+. 7513 0708 2517 0719 9001 2746 2012 0250 8739 4632
+PREFEITURA MUNIC | | | | |
+
+Número da NFS-e
+40
+
+PREFEITURA MUNICIPAL DE COLOMBO
+SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO E FAZENDA
+Data Fato Gerador Data/Hora Emissão
+TOMADOR DO SERVIÇO
+
+Nome Fantasia
+GO CASE
+
+Nome/Razão Social CPF/CNP)
+
+GO COMERCIO DE ARTIGOS ELETRONICOS E ACESSORIOS LTDA 22.165.464/0001-90
+Endereço Número Complemento
+
+R PADRE VALDEVINO 2528 SALA 02
+
+Bairro CEP Cidade
+
+DIONISIO TORRES 60135414 Fortaleza - CE
+
+País Telefone Email
+
+Brasil - BR - 1058 Não Informado Não Informado
+
+DESCRIÇÃO DOS SERVIÇOS PRESTADOS
+
+Servico Local Alíquota Situação i Unidade Quantidade ; Valor : Desc. Valor Valor ISS
+1706 i Prestação : SIMPLES Trib. Serviço | Unidade : Unidade i Incondic. ; Dedução ; siMPLES
+Po 7513  ; NACIONAL TI UN É 1 | R$1.368,11 0,00 | 0,00 é NACIONAL
+
+Descrição do Serviço:
+Gocase + Mariana Brascka
+
+Dados para pagamento
+
+Banco 104
+
+Banco: Caixa Econômica Federal
+Agência: 3414
+
+Conta: 1640-7
+
+NOME: M B DE OLIVEIRA LEMES LTDA
+CNPJ: 12.746.201/0001-11
+
+PIX: 12.746.201/0001-11
+
+Valor Total Desc. Incondicional Dedução Base de Cálculo ISSQN
+1.368,11 0,00 0,00 SIMPLES NACIONAL SIMPLES NACIONAL
+ISSRF IR INSS CSLL COFINS
+0,00 0,00 0,00 0,00 0,00
+PIS Outras Retenções Total Trib. Federais Desc. Condicional Valor Líquido
+0,00 0,00 0,00 0,00 1.368,11
+
+Descrição dos subitens da Lista de Serviço em acordo com a Lei Complementar 116/03.
+
+1706 - Propaganda e publicidade, inclusive promoção de vendas, planejamento de campanhas ou sistemas de publicidade, elaboração de desenhos, textos e
+demais materiais publicitários.
+
+Legenda do Local de Prestação do Serviço
+
+7513 - Colombo
+
+Outras Informações
+
+TI- Tributada Integralmente
+
+(1706) Serviço tributado no município do prestador
+
+Contribuinte enquadrado como Simples - Homologado.
+Autorização para emissão de Nota Fiscal de Serviço Eletrônica: 723/2023 de 22/06/2023 00:00:00
+
+A veracidade das informações declaradas na NFS-e podem ser consultadas no site:
+
+A data de vencimento do ISS quando o mesmo for devido no município do Prestador: 22/09/2025
+
+Valor aproximado dos tributos: Federais R$184,01 (13,45%), Estaduais R$0,00 (0,00%), Municipais R$63,48 (4,64%), com base na Lei 12.741/2012 e no
+Decreto 8.264/2014 - FONTE IBPT
+
